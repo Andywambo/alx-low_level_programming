@@ -1,34 +1,15 @@
-#include "stdio.h"
+#include <stdio.h>
 
 /**
- * cap_string - a function that capitalizes all words of a string
- * @n: input string
- * Return: caps on first letter of a separator
+ * main - prints the size of various types
+ * Return: 0
  */
-char *cap_string(char *n)
+int main(void)
 {
-	int i, x;
-	int cap = 32;
-	int separators[] = {',', ';', '.', '?', '"',
-			    '(', ')', '{', '}', ' ', '\n', '\t'};
-
-	for (i = 0; n[i] != '\0'; i++)
-	{
-		if (n[i] >= 'a' && n[i] <= 'z')
-		{
-			n[i] = n[i] - cap;
-		}
-
-		cap = 0;
-
-		for (x = 0; x <= 12; x++)
-		{
-			if (n[i] == separators[x])
-			{
-				x = 12;
-				cap = 32;
-			}
-		}
-	}
-	return (n);
+	printf("Size of a char: %d byte(s)\n", sizeof(char));
+	printf("Size of an int: %d byte(s)\n", sizeof(int));
+	printf("Size of a long int: %d byte(s)\n", sizeof(long int));
+	printf("Size of a long long int: %d byte(s)\n", sizeof(long long int));
+	printf("Size of a float: %d byte(s)\n", sizeof(float));
+	return (0);
 }
