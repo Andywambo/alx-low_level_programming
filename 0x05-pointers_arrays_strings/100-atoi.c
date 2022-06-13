@@ -1,4 +1,4 @@
-#include "main.h"
+include "main.h"
 #include <stdio.h>
 /**
  *_atoi - converts a string to an integer.
@@ -37,3 +37,4 @@ int _atoi(char *s)
 	if (sign < 0)
 		res *= sign;
 	return (res);
+}
