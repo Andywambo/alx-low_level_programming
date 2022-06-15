@@ -3,7 +3,6 @@
 
 /**
  * File: main.h
- * Author: Dennis Kamau
  * Desc: Header file containing prototypes for all functions.
  */
 
